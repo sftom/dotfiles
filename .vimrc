@@ -10,34 +10,44 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
+" Plugin Instructions
+" http://vimawesome.com/
+
 call vundle#begin()
 " Let Vundle manage itself.
 " Plugin 'gmarik/Vundle.vim'
 
 " Plugins
 Plugin 'JamshedVesuna/vim-markdown-preview'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-git'
 Plugin 'tyru/open-browser.vim'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'lervag/vimtex'
+Plugin 'davidhalter/jedi-vim'
 
 " Color schemes
 Plugin 'tomasr/molokai'
 Plugin 'flazz/vim-colorschemes'
+" Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 
 filetype plugin indent on
 
-set ai " autoindent 
+set ai " autoindent
+syntax enable
 set background=dark
+" colorscheme solarized
 set backup
 set bs=indent,eol,start
 set history=50
