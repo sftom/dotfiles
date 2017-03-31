@@ -41,6 +41,9 @@ Plugin 'lervag/vimtex'
 " Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 
+let &rtp = '~/.vim/bundle/vimtex,' . &rtp
+let &rtp .= ',~/.vim/bundle/vimtex/after'
+
 filetype plugin indent on
 
 " Automatically indent when adding a curly bracket, etc.
