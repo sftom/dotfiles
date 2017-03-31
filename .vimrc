@@ -31,8 +31,8 @@ Plugin 'mattn/emmet-vim'
 " Plugin 'tpope/vim-surround'
 " Plugin 'tpope/vim-git'
 " Plugin 'tyru/open-browser.vim'
-" Plugin 'vim-pandoc/vim-pandoc'
-" Plugin 'lervag/vimtex'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'lervag/vimtex'
 " Plugin 'davidhalter/jedi-vim'
 
 " Color schemes
