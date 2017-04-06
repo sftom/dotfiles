@@ -46,6 +46,16 @@ call vundle#end()
 let &rtp = '~/.vim/bundle/vimtex,' . &rtp
 let &rtp .= ',~/.vim/bundle/vimtex/after'
 
+            let g:vimtex_view_general_viewer = 'SumatraPDF'
+            let g:vimtex_view_general_options
+                \ = '-reuse-instance -forward-search @tex @line @pdf'
+                \ . '-inverse-search "gvim --servername ' . v:servername
+                \ . ' --remote-send \"^<C-\^>^<C-n^>'
+                \ . ':drop \%f^<CR^>:\%l^<CR^>:normal\! zzzv^<CR^>'
+                \ . ':execute ''drop '' . fnameescape(''\%f'')^<CR^>'
+                \ . ':\%l^<CR^>:normal\! zzzv^<CR^>'
+                \ . ':call remote_foreground('''.v:servername.''')^<CR^>^<CR^>\""'
+
 filetype plugin indent on
 
 " Automatically indent when adding a curly bracket, etc.
