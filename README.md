@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dotfiles
 
 My dotfiles
@@ -21,3 +22,7 @@ cd ~/.vim
 git submodule init
 git submodule update
 ```
+=======
+# dotfiles
+My dotfiles
+>>>>>>> ad30d91ca258266aea8b79c3686f667e7d6d608f
