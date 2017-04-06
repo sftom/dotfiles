@@ -26,7 +26,7 @@ Plugin 'mattn/emmet-vim'
 " Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp'
+" Plugin 'kien/ctrlp'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
 " Plugin 'tpope/vim-sleuth'
@@ -42,6 +42,8 @@ Plugin 'lervag/vimtex'
 " Plugin 'flazz/vim-colorschemes'
 " Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 let &rtp = '~/.vim/bundle/vimtex,' . &rtp
 let &rtp .= ',~/.vim/bundle/vimtex/after'
