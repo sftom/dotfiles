@@ -20,9 +20,10 @@ call vundle#begin()
 " Plugin 'JamshedVesuna/vim-markdown-preview'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'SirVer/ultisnips'
 " Plugin 'bling/vim-airline'
-" Plugin 'honza/vim-snippets'
-Plugin 'mattn/emmet-vim'
+Plugin 'honza/vim-snippets'
+" Plugin 'mattn/emmet-vim'
 " Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -82,7 +83,7 @@ endif
 
 " Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=999
-
+ 
 set number
 
 " Show line number, cursor position
@@ -131,9 +132,19 @@ set visualbell
 
 syntax on
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown
+au BufNewFile,BufRead *.{tex} set filetype=tex
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} setlocal textwidth=80
 
-let g:user_emmet_mode='a'
-let g:user_emmet_install_global=0
-autocmd FileType html,css EmmetInstall
+" let g:user_emmet_mode='a'
+" let g:user_emmet_install_global=0
+" autocmd FileType html,css EmmetInstall
+
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
