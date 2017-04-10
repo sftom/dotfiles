@@ -7,7 +7,7 @@ git clone git://github.com/sftom/dotfiles.git ~/.vim
 ```
 ## Create symlinks:
 
-### on Unix Systems
+### on Unix/MacOSX Systems
 
 ```terminal
 ln -s ~/Documents/development/dotfiles/.vim/.vimrc ~/.vimrc
