@@ -84,7 +84,7 @@ endif
 " Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=999
  
-set number
+set relativenumber
 
 " Show line number, cursor position
 set ruler
@@ -133,7 +133,7 @@ set visualbell
 syntax on
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown
 au BufNewFile,BufRead *.{tex} set filetype=tex
-au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} setlocal textwidth=80
+au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn,tex} setlocal textwidth=72
 
 " let g:user_emmet_mode='a'
 " let g:user_emmet_install_global=0
