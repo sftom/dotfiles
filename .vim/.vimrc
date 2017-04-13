@@ -142,11 +142,22 @@ autocmd BufReadPre *.tex setlocal textwidth=60
 " let g:user_emmet_install_global=0
 " autocmd FileType html,css EmmetInstall
 
-" open pdf files on vimtex
+" open pdf files in vimtex on linux
 let g:vimtex_view_general_viewer = 'qpdfview'
 let g:vimtex_view_general_options
     \ = '--unique @pdf\#src:@tex:@line:@col'
 let g:vimtex_view_general_options_latexmk = '--unique'
+
+" open pdf files in vimtex on windows
+let g:vimtex_view_general_viewer = 'SumatraPDF'
+let g:vimtex_view_general_options
+    \ = '-reuse-instance -forward-search @tex @line @pdf'
+    \ . '-inverse-search "gvim --servername ' . v:servername
+    \ . ' --remote-send \"^<C-\^>^<C-n^>'
+    \ . ':drop \%f^<CR^>:\%l^<CR^>:normal\! zzzv^<CR^>'
+    \ . ':execute ''drop '' . fnameescape(''\%f'')^<CR^>'
+    \ . ':\%l^<CR^>:normal\! zzzv^<CR^>'
+    \ . ':call remote_foreground('''.v:servername.''')^<CR^>^<CR^>\""'
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
