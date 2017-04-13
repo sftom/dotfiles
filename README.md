@@ -29,3 +29,16 @@ cd ~/.vim
 git submodule init
 git submodule update
 ```
+## My Arch/Manjaro Linux Packages Backup
+
+List of installed packages
+
+```terminal
+pacman -Qqe > .arch-manjaro-packages.txt
+```
+To install packages from the list backup, rum:
+
+```terminal
+pacman -S - < .arch-manjaro-packages.txt
+```
+

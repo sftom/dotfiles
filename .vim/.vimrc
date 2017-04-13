@@ -85,6 +85,7 @@ endif
 set scrolloff=999
  
 set relativenumber
+set number
 
 " Show line number, cursor position
 set ruler
@@ -132,8 +133,10 @@ set visualbell
 
 syntax on
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown
-au BufNewFile,BufRead *.{tex} set filetype=tex
-au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn,tex} setlocal textwidth=72
+au BufNewFile,BufRead *.tex set filetype=tex
+au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} setlocal textwidth=72
+
+autocmd BufReadPre *.tex setlocal textwidth=60
 
 " let g:user_emmet_mode='a'
 " let g:user_emmet_install_global=0
