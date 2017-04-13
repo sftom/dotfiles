@@ -142,6 +142,12 @@ autocmd BufReadPre *.tex setlocal textwidth=60
 " let g:user_emmet_install_global=0
 " autocmd FileType html,css EmmetInstall
 
+" open pdf files on vimtex
+let g:vimtex_view_general_viewer = 'qpdfview'
+let g:vimtex_view_general_options
+    \ = '--unique @pdf\#src:@tex:@line:@col'
+let g:vimtex_view_general_options_latexmk = '--unique'
+
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
