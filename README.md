@@ -36,7 +36,7 @@ List of installed packages
 ```terminal
 pacman -Qqe > .arch-manjaro-packages.txt
 ```
-To install packages from the list backup, rum:
+To install packages from the list backup, run:
 
 ```terminal
 pacman -S - < .arch-manjaro-packages.txt
