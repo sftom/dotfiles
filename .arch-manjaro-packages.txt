@@ -125,6 +125,7 @@ linux410-broadcom-wl
 logrotate
 lsb-release
 lvm2
+lynx
 m4
 make
 man-db
@@ -142,6 +143,7 @@ manjaro-settings-manager-notifier
 manjaro-system
 manjaro-wallpapers-17.0
 manjaro-xfce-settings
+markdown
 mdadm
 memtest86+
 menulibre
@@ -176,6 +178,7 @@ p7zip
 pa-applet
 pacman
 pamac
+pandoc
 patch
 patchutils
 pavucontrol
@@ -231,6 +234,7 @@ thunar-volman
 thunderbird
 tlp
 tmux
+tor
 ttf-bitstream-vera
 ttf-droid
 ttf-inconsolata
