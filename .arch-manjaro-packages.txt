@@ -40,6 +40,7 @@ ecryptfs-utils
 efibootmgr
 engrampa
 engrampa-thunar-plugin
+epson-inkjet-printer-escpr
 exfat-utils
 exo
 f2fs-tools
@@ -82,18 +83,21 @@ gtk-xfce-engine
 gtk3-print-backends
 guayadeque
 gufw
+gutenprint
 gvfs
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+gvim
 gwget
 gzip
 haveged
 hexchat
 hplip
 htop
+imagescan
 inetutils
 intel-ucode
 inxi
@@ -102,6 +106,8 @@ iptables
 iputils
 ipw2100-fw
 ipw2200-fw
+iscan
+iscan-data
 jdk8-openjdk
 jfsutils
 jre8-openjdk
@@ -157,6 +163,7 @@ modemmanager
 mousepad
 mtpfs
 mugshot
+multiload-ng-indicator-gtk3
 nano
 network-manager-applet
 networkmanager
@@ -197,10 +204,13 @@ pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
 pyqt5-common
+python-ipaddress
 python-pillow
 python-pip
 python-pyqt5
 python-reportlab
+python-unidecode
+python2-ipaddress
 qpdfview
 qpdfview-djvu-plugin
 qpdfview-ps-plugin
@@ -216,6 +226,7 @@ steam-manjaro
 subversion
 sudo
 sysfsutils
+system-config-printer
 systemd-sysvcompat
 tar
 terminus-font
@@ -227,6 +238,7 @@ texlive-langextra
 texlive-latexextra
 texlive-pictures
 texlive-publishers
+texlive-science
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -248,7 +260,6 @@ unrar
 usbutils
 util-linux
 viewnior
-vim
 vim-ctrlp
 vim-fugitive
 vim-jedi
@@ -316,6 +327,12 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xorg-xkill
+xsane
 yelp
+zathura
+zathura-cb
+zathura-djvu
+zathura-pdf-poppler
+zathura-ps
 zd1211-firmware
 zsh
