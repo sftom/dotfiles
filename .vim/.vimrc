@@ -152,10 +152,14 @@ set visualbell
 
 syntax on
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown
-au BufNewFile,BufRead *.tex set filetype=tex
-au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} setlocal textwidth=72
+au BufNewFile,BufRead *.{tex,md,mdown,mkd,mkdn,markdown,mdwn} setlocal textwidth=80
 
-autocmd BufReadPre *.tex setlocal textwidth=60
+" LaTeX folding
+" set foldmarker=\\begin,\\end
+" set foldmethod=marker
+
+" set foldmethod=expr
+" set foldexpr=getline(v:lnum)!~\"^.chapter\"
 
 " Get the correct servername
 let theuniqueserv = expand("%:r")
