@@ -5,7 +5,7 @@
 apt-get update
 apt-get upgrade -y
 apt-get purge openjdk-\* -y
-apt-get install snapd vim tmux tree git inkscape wget curl texlive-full -y 
+apt-get install snapd vim conky nmon htop tmux tree git inkscape wget curl texlive-full -y 
 apt-get autoremove -y
 apt-get clean -y
 apt-get autoclean -y
@@ -54,4 +54,10 @@ apt-get install -f
 apt-get autoremove -y
 apt-get clean -y
 apt-get autoclean -y
+
+
+### my conky settings
+
+cp ~/Downloads/conky.conf /etc/conky/conky.conf
+cp ~/Downloads/conky.desktop ~/.config/autostart/conky.destop
 
